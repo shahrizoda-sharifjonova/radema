@@ -1,3 +1,27 @@
 mixin header()
     header.header 
         .header__nav.container
+            .header__row 
+                a(href="index.html").logo   
+                    img(src="@img/logo.svg", alt="" draggable="false") 
+                p.header__txt #[span Медицинский маркетинг под ключ]  с гарантией увеличения продаж
+            .header__info 
+                p.header__p Задайте вопрос, мы сейчас онлайн
+                .header__links
+                    a(href="http://telegram.com").header__link 
+                        img(src="@img/telegram.png", alt="" draggable="false")
+                    a(href="http://whatsapp.com").header__link 
+                        img(src="@img/whatsapp.png", alt="" draggable="false")
+            .header__col.disable-xxl
+                p.header__p Звоните, Пн-Пт 9:00 - 20:00
+                a(href="tel::+7(917)545-82-25").header__phone +7 (917) 545-82-25 
+            .header__col.enable-xxl 
+                p.header__p Задайте свой вопрос
+                .header__links
+                    a(href="tel::+7(917)545-82-25").header__link 
+                        img(src="@img/phone.png", alt="" draggable="false")
+                    a(href="http://telegram.com").header__link 
+                        img(src="@img/telegram.png", alt="" draggable="false")
+                    a(href="http://whatsapp.com").header__link 
+                        img(src="@img/whatsapp.png", alt="" draggable="false")
+                p.header__text Пн-Пт 9:00 - 20:00

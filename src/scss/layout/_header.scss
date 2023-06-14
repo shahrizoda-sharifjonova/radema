@@ -1,1 +1,170 @@
-// Шапка
+.header{
+    padding-top: 28px;
+    padding-bottom: 85px;
+    position: relative;
+    z-index: 1;
+    @include media(1200){
+        padding-bottom: 28px;
+    }
+    @include media(768){
+        padding-top: 7px;
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        margin-right: 22px;
+        @include media(575){
+            max-width: 149px;
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__txt{
+        max-width: 303px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        @include media(992){
+            display: none;
+        }
+        span{
+            font-weight: 700;
+        }
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        @include media(1400){
+            display: none;
+        }
+        .header__p{
+            max-width: 151px;
+        }
+    }
+    &__p{
+        width: 100%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        position: relative;
+        @include media(1400){
+            position: static;
+        }
+        @include media(575){
+            font-size: 9px;
+            line-height: 11px;
+            text-align: center;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            left: -13px;
+            top: 8px;
+            width: 7px;
+            height: 7px;
+            background: #3FE04F;
+            border-radius: 50%;
+            @include media(1400){
+                display: none;
+            }
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 6px;
+            width: 9px;
+            height: 9px;
+            border: 0.2px solid #3FE04F;
+            background: transparent;
+            border-radius: 50%;
+            @include media(1400){
+                display: none;
+            }
+        }
+    }
+    &__links{
+        display: flex;
+        align-items: center;
+        margin-left: 17px;
+        @include media(1400){
+            margin-left: 0;
+        }
+    }
+    &__link{
+        @include media(1400){
+            width: 40px;
+        }
+        @include media(575){
+            width: 25px;
+        }
+        img{
+            width: 100%;
+        }
+        &:not(:last-of-type){
+            margin-right: 9px;
+            @include media(768){
+                margin-right: 8px;
+            }
+        }
+    }
+    &__col{
+        &.disable-xxl{
+            @include media(1400){
+                display: none;
+            }  
+        }
+        &.enable-xxl{
+            display: none;
+            @include media(1400){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .header__p{
+            padding-left: 15px;
+            margin-bottom: 4px;
+            @include media(1400){
+                padding-left: 0;
+            }
+            &::before{
+                left: 1px;
+            }
+            &::after{
+                left: -1px;
+            }
+        }
+    }
+    &__phone{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        color: #000000;
+    }
+    &__text{
+        font-weight: 400;
+        font-size:16px;
+        line-height: 9px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;      
+        margin-top: 5px;
+        @include media(575){
+            font-size: 8px;
+            line-height: 9px;
+        }
+    }
+}
