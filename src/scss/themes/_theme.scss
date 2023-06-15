@@ -15,6 +15,11 @@ body{
     height: 100%;
     overflow-x: hidden;
 }
+body{
+    &.hidden{
+        overflow-y: hidden;
+    }
+}
 .wrapper{
     min-height: 100%;
     display: flex;
@@ -34,6 +39,9 @@ a{
 }
 ul{
     list-style-type: none;
+}
+li{
+    list-style: none;
 }
 // delete this code
 body{

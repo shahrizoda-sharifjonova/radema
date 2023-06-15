@@ -1,1 +1,45 @@
-// Футер
+.footer{
+    background: rgba(166, 243, 251, 0.5);
+    padding: 10px 0;
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media(768){
+            flex-direction: column;
+        }
+    }
+    &__p{
+        max-width: 310px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+        @include media(768){
+            text-align: center;
+            font-size: 9px;
+            line-height: 11px;
+            max-width: 231px;
+        }
+        &:last-of-type{
+            max-width: 120px;
+        }
+    }
+    &__link{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #000000;
+        @include media(768){
+            margin-top: 12px;
+            margin-bottom: 12px;
+            font-size: 9px;
+            line-height: 11px;
+        }
+    }
+}

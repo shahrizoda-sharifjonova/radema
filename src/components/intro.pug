@@ -5,27 +5,27 @@ mixin intro()
                 .intro__left 
                     p.intro__desc Коридоры пустые? Врачи скучают? Нужно больше пациентов?
                     h1.intro__title Забронируйте место на стратегическую сессию 
-                        .open-info.intro__circle i 
-                            .intro__line.first
-                            .intro__line.second 
+                        .open-info.intro__circle i
+                            .intro__line
+                            .info 
+                                .info__title На стратегической сессии вы узнаете, почему:
+                                ul.info__list 
+                                    li.info__li Сайт работает, но с него мало заявок или их совсем нет
+                                    li.info__li Заявок много, но продаж нет
+                                    li.info__li Звонки есть – продаж нет / нет показателей эффективности отдела продаж
+                                    li.info__li Мало повторных продаж и постоянно приходится привлекать новых клиентов
+                                    li.info__li Заявки дорогие и не окупаются. Unit-экономика не сходится
+                                    li.info__li Тратите деньги на рекламу, а результаты не оправдывают ожидания
+                                p.info__p За 1 час составим план точечных рекомендаций и конкретных действий по вашему сайту и рекламным каналам, #[span как за 3 месяца увеличить выручку на 30-50%]
                         br
                         | с медицинским маркетологом
-                    .info 
-                        .info__title На стратегической сессии вы узнаете, почему:
-                        ul.info__list 
-                            li.info__li Сайт работает, но с него мало заявок или их совсем нет
-                            li.info__li Заявок много, но продаж нет
-                            li.info__li Звонки есть – продаж нет / нет показателей эффективности отдела продаж
-                            li.info__li Мало повторных продаж и постоянно приходится привлекать новых клиентов
-                            li.info__li Заявки дорогие и не окупаются. Unit-экономика не сходится
-                            li.info__li Тратите деньги на рекламу, а результаты не оправдывают ожидания
-                        p.info__p За 1 час составим план точечных рекомендаций и конкретных действий по вашему сайту и рекламным каналам, #[span как за 3 месяца увеличить выручку на 30-50%]
                     p.intro__desc И получите чек-лист для проверки эффективности текущего маркетинга вашей клиники по 72 пунктам  #[span В ПОДАРОК]
                     .intro__buttons.disable-lg  
-                        button(type="button").intro__btn Забронировать место и скачать чек-лист
+                        button(type="button").intro__btn.popup-open Забронировать место и скачать чек-лист
                         .intro__row
                             a(href="#!").intro__pause 
                                 img(src="@img/intro-pause.svg", alt="" draggable="false")
+                                .intro__pause-line
                             .intro__pause-info 
                                 p.intro__pause-subtitle Работаем на результат
                                 p.intro__pause-desc Увеличили выручку клиники на 50%
@@ -40,7 +40,13 @@ mixin intro()
                             p.intro__calendar-p места
                     .intro__img 
                         img(src="@img/intro-img.png", alt="" draggable="false").disable-lg
-                        img(src="@img/intro-img-lg.png", alt="" draggable="false").enable-lg
+                        img(src="@img/intro-img-lg.png", alt="" draggable="false").enable-lg 
+                        .open-info.intro__circle i
+                            .intro__line
+                            .info.img__info 
+                                p.info__title Вячеслав Радецкий
+                                li.info__li Медицинский маркетолог с опытом >6 лет
+                                li.info__li Основатель маркетингового агентства RADEMA
                     .intro__infos 
                         p.intro__name Вячеслав Радецкий
                         p.intro__info Медицинский маркетолог с опытом >6 лет Основатель маркетингового агентства RADEMA
