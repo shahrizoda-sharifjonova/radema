@@ -1,6 +1,6 @@
 .header{
     padding-top: 28px;
-    padding-bottom: 85px;
+    padding-bottom: 28px;
     position: relative;
     z-index: 1;
     @include media(1200){
@@ -75,6 +75,10 @@
             height: 7px;
             background: #3FE04F;
             border-radius: 50%;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-name: online;
             @include media(1400){
                 display: none;
             }
@@ -89,6 +93,10 @@
             border: 0.2px solid #3FE04F;
             background: transparent;
             border-radius: 50%;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-name: online;
             @include media(1400){
                 display: none;
             }
@@ -166,5 +174,16 @@
             font-size: 8px;
             line-height: 9px;
         }
+    }
+}
+@keyframes online{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }

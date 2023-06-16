@@ -17,19 +17,18 @@ mixin intro()
                                     li.info__li Заявки дорогие и не окупаются. Unit-экономика не сходится
                                     li.info__li Тратите деньги на рекламу, а результаты не оправдывают ожидания
                                 p.info__p За 1 час составим план точечных рекомендаций и конкретных действий по вашему сайту и рекламным каналам, #[span как за 3 месяца увеличить выручку на 30-50%]
-                        br
                         | с медицинским маркетологом
                     p.intro__desc И получите чек-лист для проверки эффективности текущего маркетинга вашей клиники по 72 пунктам  #[span В ПОДАРОК]
                     .intro__buttons.disable-lg  
-                        button(type="button").intro__btn.popup-open Забронировать место и скачать чек-лист
+                        button(type="button" data-target="register").intro__btn.popup-open Забронировать место и скачать чек-лист
                         .intro__row
-                            a(href="#!").intro__pause 
+                            button(type="button" data-target="video").intro__pause.popup-open 
                                 img(src="@img/intro-pause.svg", alt="" draggable="false")
                                 .intro__pause-line
                             .intro__pause-info 
                                 p.intro__pause-subtitle Работаем на результат
                                 p.intro__pause-desc Увеличили выручку клиники на 50%
-                                a(href="#!").intro__pause-link Посмотрите видео-отзыв директора
+                                button(type="button" data-target="video").intro__pause-link.popup-open Посмотрите видео-отзыв директора
                     p.intro__subtitle.disable-lg Торопитесь!
                     p.intro__p.disable-lg Количество мест на стратегическую сессию с медицинским маркетологом ограничено
                 .intro__right 
@@ -51,13 +50,13 @@ mixin intro()
                         p.intro__name Вячеслав Радецкий
                         p.intro__info Медицинский маркетолог с опытом >6 лет Основатель маркетингового агентства RADEMA
             .intro__buttons.enable-lg  
-                    button(type="button").intro__btn Забронировать место и скачать чек-лист
+                    button(type="button" data-target="register").intro__btn.popup-open Забронировать место и скачать чек-лист
                     .intro__row
-                        a(href="#!").intro__pause 
+                        button(type="button" data-target="video").intro__pause.popup-open 
                             img(src="@img/intro-pause.svg", alt="" draggable="false")
                         .intro__pause-info 
                             p.intro__pause-subtitle Работаем на результат
                             p.intro__pause-desc Увеличили выручку клиники на 50%
-                            a(href="#!").intro__pause-link Посмотрите видео-отзыв директора
+                            button(type="button" data-target="video").intro__pause-link.popup-open Посмотрите видео-отзыв директора
             p.intro__subtitle.enable-lg Торопитесь!
             p.intro__p.enable-lg Количество мест на стратегическую сессию с медицинским маркетологом ограничено

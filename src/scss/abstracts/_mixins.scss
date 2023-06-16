@@ -7,10 +7,10 @@ $md: 768;
 $sm: 576;
 
 $sizes: (1570:$xxl,
-    1140:$xl,
-    960:$lg,
-    720:$md,
-    540:$sm,
+1569:$xl,
+1568:$lg,
+1567:$md,
+1566:$sm,
     0:0
 );
 
@@ -22,8 +22,8 @@ $break-point in $sizes {
             width: 100%;
             margin-right: auto;
             margin-left: auto;
-            padding-right: 18px;
-            padding-left: 22px;
+            padding-right: 25px;
+            padding-left: 25px;
         }
     }
 
